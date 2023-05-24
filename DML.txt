@@ -1,0 +1,16 @@
+INSERT INTO clients (nom) VALUES
+    ('Jean Dupont'),
+    ('Alice Martin'),
+    ('Pierre Lefebvre');
+
+
+INSERT INTO employees (nom) VALUES
+    ('John Smith'),
+    ('Emily Johnson'),
+    ('Michael Davis');
+
+
+INSERT INTO appointments (client_id, employee_id, appointment_date) VALUES
+    (1, 2, '2023-05-24 09:00:00'),
+    (2, 3, '2023-05-25 14:30:00'),
+    (3, 1, '2023-05-26 11:15:00');

@@ -1,0 +1,15 @@
+Pour faire fonctionner le projet il faut une bdd en mysql.
+
+Executer ce qui il y a dans le fichier DDL pour la structure de la bdd.
+
+Dans DML il y a un jeu de donnée pour la bdd.
+
+Dans le projet il faut integrer le fichier mysql-connector-j-8.0.33. 
+
+Il faut modifier les informations de connexion de la BDD dans le constructeur de DatabaseDAO.java.
+
+Le projet foncitonne sous tomcat 10.10.9 et java 19.
+
+Le projet sélectionner est la gestion de RDV.
+
+La modification de RDV ainsi que la verification si un client ou un employee n'est pas deja pris est innexistante.

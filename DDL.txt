@@ -1,0 +1,25 @@
+-- Création de la table clients
+CREATE TABLE clients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL
+);
+
+-- Création de la table employees
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL
+);
+
+-- Création de la table appointments
+CREATE TABLE appointments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    client_id INT NOT NULL,
+    employee_id INT NOT NULL,
+    appointment_date DATETIME NOT NULL,
+    CONSTRAINT fk_client
+        FOREIGN KEY (client_id)
+        REFERENCES clients(id),
+    CONSTRAINT fk_employee
+        FOREIGN KEY (employee_id)
+        REFERENCES employees(id)
+);
